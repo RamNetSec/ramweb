@@ -24,7 +24,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-[#0d0f20] text-gray-300">
+  <body class="text-white">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
@@ -57,29 +57,17 @@
               <a class="nav-link" href="#skills">skills</a>
             </div>
           </div>
-          <button
-            class="btn btn-outline-secondary"
-            type="button"
-            id="sidebarToggle"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
         </div>
       </nav>
     </header>
     <div class="progress-bar-container">
-      <div id="progressBar"></div>
-    </div>
-    <main>
-      <div class="sidebar" id="sidebar">
-        <ul>
-          <li><a href="#about">About me</a></li>
-          <li><a href="#experience">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-        </ul>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
       </div>
+    </div>
 
-      <section class="profile-section">
+    <main >
+      <section class="profile-section section-background">
         <img
           src="https://cdn.glitch.global/ea8585c2-1a1d-4216-bbe9-8e8fa6a0cb34/305494870_122657027196458_511687468789242549_n.jpg?v=1714434254735"
           alt="Ramses Rafael Valdez Lugo"
@@ -99,9 +87,12 @@
             target="_blank"
             >PDF CV</a
           >
+          <a href="https://app.hackthebox.com/profile/1055029" target="_blank"
+            >HTB</a
+          >
         </div>
       </section>
-      <section id="allmylinks" class="section">
+      <section id="allmylinks" class="section section-background">
         <div class="section-title">Enlaces</div>
         <div class="section-content">
           <iframe
@@ -122,7 +113,7 @@
           ></iframe>
         </div>
       </section>
-      <section id="about" class="section">
+      <section id="about" class="section section-background">
         <div class="section-title">Perfil Profesional</div>
         <div class="section-content">
           <p>
@@ -137,7 +128,7 @@
         </div>
       </section>
 
-      <section id="experience" class="section">
+      <section id="experience" class="section section-background">
         <div class="section-title">Educación</div>
         <div class="section-content">
           <p>Desarrollo de Software · (2020 - Actual)</p>
@@ -156,7 +147,7 @@
         </div>
       </section>
 
-      <section id="projects" class="section">
+      <section id="projects" class="section section-background">
         <div class="container">
           <h2 class="section-title text-center mb-5">Proyectos</h2>
           <div class="row">
@@ -213,7 +204,7 @@
         </div>
       </section>
 
-      <section id="skills" class="section">
+      <section id="skills" class="section section-background">
         <div class="section-title">Habilidades Técnicas</div>
         <div class="section-content skills-grid">
           <div class="skill-item">
@@ -329,7 +320,7 @@
         </div>
       </section>
 
-      <section id="certifications" class="section">
+      <section id="certifications" class="section section-background">
         <div class="section-title">Certificaciones</div>
         <ul class="certs-list">
           <li>Curso Básico de Seguridad Informática para Empresas - Platzi</li>
