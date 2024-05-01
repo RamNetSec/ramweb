@@ -35,24 +35,24 @@ function type() {
   const textElement = document.getElementById("typed-text");
   if (forward) {
     if (currentCharacter < phrases[currentPhrase].length) {
-      html += phrases[currentPhrase].charAt(currentCharacter);
+      html += phrases[currentPhrase][currentCharacter];
       textElement.innerHTML = html;
       currentCharacter++;
-      setTimeout(type, 1200); // Velocidad de escritura
+      setTimeout(type, 800); // Faster typing speed
     } else {
-      setTimeout(type, 100); // Espera antes de empezar a borrar
+      setTimeout(type, 500); // Wait before starting to delete
       forward = false;
     }
   } else {
     if (currentCharacter > 0) {
-      html = html.substring(0, html.length - 1);
+      html = html.slice(0, -1);
       textElement.innerHTML = html;
       currentCharacter--;
-      setTimeout(type, 1200); // Velocidad de borrado
+      setTimeout(type, 800); // Faster deletion speed
     } else {
       forward = true;
-      currentPhrase = (currentPhrase + 1) % phrases.length; // Siguiente frase
-      setTimeout(type, 200); // Espera antes de escribir de nuevo
+      currentPhrase = (currentPhrase + 1) % phrases.length; // Next phrase
+      setTimeout(type, 1000); // Wait before typing again
     }
   }
 }
