@@ -20,6 +20,7 @@
   --navbar-text-color: var(--text-color); /* Color del texto del navbar */
 }
 
+
 /* Estilos básicos */
 body {
   background: var(--body-background-color) no-repeat center center fixed;
@@ -43,6 +44,15 @@ ul {
   list-style: none;
   padding: 0;
 }
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px; /* half of the dot's height */
+}
+
 /* Estilos del navbar */
 .navbar {
   display: flex;
