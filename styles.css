@@ -9,17 +9,33 @@
   --sidebar-width: 300px; /* Ancho estándar */
   --sidebar-width-md: 250px; /* Ancho para tablets */
   --sidebar-width-sm: 200px; /* Ancho para móviles */
-  --background-color: rgba(52, 58, 64, 0.85); /* Color de fondo del navbar con transparencia */
+  --background-color: rgba(
+    52,
+    58,
+    64,
+    0.85
+  ); /* Color de fondo del navbar con transparencia */
   --text-color: #ffffff; /* Color del texto */
-  --hover-background-color: rgba(80, 88, 94, 0.9); /* Color de fondo al pasar el mouse */
+  --hover-background-color: rgba(
+    80,
+    88,
+    94,
+    0.9
+  ); /* Color de fondo al pasar el mouse */
   --transition-speed: 0.3s; /* Velocidad de las transiciones */
-  --body-background-color: rgba(23, 24, 23, 0.8); /* Color de fondo del cuerpo */
+  --body-background-color: rgba(
+    23,
+    24,
+    23,
+    0.8
+  ); /* Color de fondo del cuerpo */
   --body-font-color: var(--color-text-primary); /* Color de fuente del cuerpo */
   --link-color: var(--color-text-secondary); /* Color de los enlaces */
-  --navbar-background-color: var(--background-color); /* Color de fondo del navbar */
+  --navbar-background-color: var(
+    --background-color
+  ); /* Color de fondo del navbar */
   --navbar-text-color: var(--text-color); /* Color del texto del navbar */
 }
-
 
 /* Estilos básicos */
 body {
@@ -199,8 +215,6 @@ ul {
   min-height: 80vh;
   background: rgba(0, 0, 0, 0.7);
   transition: all var(--transition-speed);
-
-
 }
 
 #certifications .section-title {
